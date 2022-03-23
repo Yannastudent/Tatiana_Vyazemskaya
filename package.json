@@ -1,0 +1,17 @@
+{
+  "name": "tatiana_vyazemskaya",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "lite-server --baseDir=\"public\"",
+    "watch": "node-sass src/scss -wo public/assets/css",
+    "start": "concurrently \"npm run watch\" \"npm run dev\""
+  },
+  "author": "Tatiana Vyazemskaya",
+  "license": "private",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^7.0.1"
+  }
+}
