@@ -121,6 +121,18 @@
     }
 }
 
+.offcanvas-start {
+    width: 155px;
+    background-color: black;
+    color: beige;
+}
+#offcanvasLabel {
+    font-size: 13px;
+    font-weight: bold;
+}
+.container {
+    width: 70%;
+}
 
 /*desktop version*/
 @media screen and (min-width:480px){
