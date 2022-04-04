@@ -1,63 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Bootstrap</title>
+  <title>Bootstrap</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/stylesheet.css" />
-   
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/stylesheet.css" />
+
 </head>
-<body>
-    <h1>Overview</h1>
-    <!--Main container-->
-    <div class="container">
-      <div class="row">
-        <div class="col">
-         Dashboard
-        </div>
-        <div class="col-6">
-         Overview
 
-         <!-- nested grid begins -->
-         <div class="row">
-           <div class="col-sm-6">
-              undersolved
-            </div>
-            <div class="col-sm-6">
-              overdue
-            </div>
-          <div class="row">
-             <div class="col-sm-6">
-              open
-              </div>
-             <div class="col-sm-6">
-              on hold
-             </div>
-         <div class="row">
-            <div class="col-sm-12">
-              Trend today
+<body>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <!--humburger menu-->
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasLabel">Dashboard Kit</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <!--left side bar-->
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tickets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Ideas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Agents</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Articles</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link disabled">Settings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Subscription</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--top Overview, search bar, user accaunt-->
+  <nav class="navbar navbar-expand navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+        aria-controls="offcanvasExample">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a id="overview" class="navbar-brand" href="#">Overview</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <!--icon bell-->
+        <a id="bell" class="navbar-brand" href="#"><i class="fa-solid fa-bell"></i></a>
+        <!--vertical line-->
+        <span id="pipe" class="vertical_line">|</span>
+        <!--user name-->
+        <a class="name" href="#">James Ferdinand</a>
+        <!--user icon-->
+        <a id="user" class="navbar-brand" href="#"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+  </nav>
+  <!--Main container-->
+  <div class="container">
+    <!-- nested grid begins 4 sections on top by two-->
+    <div class="row">
+      <!--first box undersolved-->
+      <div id="cards" class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Undersolved</h5>
+            <p class="card-text">60</p>
+          </div>
+        </div>
+        <!--second box Overdue-->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Overdue</h5>
+            <p class="card-text">16</p>
+          </div>
+        </div>
+        <!--third box Open-->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Open</h5>
+            <p class="card-text">43</p>
+          </div>
+        </div>
+        <!--4 box On hold-->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"> On hold</h5>
+            <p class="card-text">64</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--table-->
+    <div class="row">
+      <div id="table" class="col">
+        <div id="graph" class="card">
+          <h5> Today`s trends</h5>
+          <p id="top-text" class="card-text">
+            <span>as of 25 May 2019. 09:41 PM</span>
+            <span>-Today</span>
+            <span>-Yesterday</span>
+          </p>
+          <img src="assets/images/full_graph.jpg" class="card-img-top" alt="chart">
+          <div class="card-body">
+          </div>
+        </div>
+        <!--5  boxes -->
+        <div id="graph-boxes">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"> Resolved</h5>
+              <p class="card-text">449</p>
             </div>
           </div>
-         </div class="row">
-            <div class="col-sm-6">
-              Undersolved ticket
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"> Recieve</h5>
+              <p class="card-text">426</p>
             </div>
-            <div class="col">
-              Tasks
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"> Average first respond time</h5>
+              <p class="card-text">33 m</p>
             </div>
-         </div>
-        
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"> Average respond time</h5>
+              <p class="card-text">3h 8m</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"> Resolution within SLA</h5>
+              <p class="card-text">94%</p>
+            </div>
+          </div>
         </div>
-        <!-- nested grid ends -->
+      </div>
+    </div>
+    <!--4  sections on the button-->
+    <div class="row">
+      <div class="col" id="tickets">
+
+        <!--Undersolved ticket-->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Undersolved ticket</h5>
+            <p class="card-text">Group <span>Support</span> </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><span class="descr">Waiting on Feature Request</span> <span>4238</span></li>
+            <li class="list-group-item"><span class="descr">Awaiting Customer Respond </span> <span>1005</span></li>
+            <li class="list-group-item"><span class="descr">Awaiting Developer Fix </span> <span> 914</span></li>
+            <li class="list-group-item"><span class="descr">Pending </span> <span>281</span></li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">View detail</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tasks</h5>
+            <p class="card-text">Today</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <!--new task-->
+            <li class="list-group-item text-muted text text-opacity-25">Create new task</li>
+            <li class="list-group-item">
+              <div>
+              <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+              Finish ticket update
+            </div>
+              <button type="button" class="btn btn-warning">Urgent</button>
+            </li>
+            <li class="list-group-item">
+              <div>
+              <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+              Create new ticket exmple
+            </div>
+              <button type="button" class="btn btn-success">New</button>
+            </li>
+            <li class="list-group-item">
+              <div>
+              <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+              Update ticket report
+            </div>
+            </li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">View all</a>
+          </div>
+        </div>
+        <!--Resoleved tickets-->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tasks</h5>
+            <p class="card-text">Today</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item text-muted text text-opacity-25">Resolved tickets</li>
+            <li class="list-group-item">Complete
+              <button type="button" class="btn btn-primary">Complete</button>
+            <li class="list-group-item">Duplicate tickets
+              <button type="button" class="btn btn-danger">Duplicate tickets</button>
+            </li>
+            <li class="list-group-item">Update new ticket report</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">View all</a>
+          </div>
+        </div>
+        <!--info-->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tasks</h5>
+            <p class="card-text">Today</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item text-muted text text-opacity-25">Get information</li>
+            <li class="list-group-item">Information
+              <button type="button" class="btn btn-info">Info</button>
+            </li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">View all</a>
+          </div>
+        </div>
 
       </div>
     </div>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+  </div> <!-- container -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/fbcc380734.js" crossorigin="anonymous"></script>
+  <script>
+    function checkMediaQuery() {
+      var myOffcanvas = document.getElementById('offcanvas');
+      var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
+      console.log(window.innerWidth);
+      if (window.innerWidth > 480) {
+        console.log('show');
+        bsOffcanvas.show();
+      } else {
+        console.log('hide');
+        bsOffcanvas.hide();
+      }
+    }
+
+    // Add a listener for when the window resizes
+    window.addEventListener('resize', checkMediaQuery);
+
+    checkMediaQuery();
+
+  </script>
 </body>
+
 </html>

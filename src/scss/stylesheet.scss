@@ -1,0 +1,172 @@
+
+/*mobile version*/
+#top-text {
+    font-size: 12px;
+}
+/*position of nav*/
+#navbarSupportedContent {
+    justify-content: flex-end;
+}
+#pipe  {
+    padding: 5px 10px 5px;
+}
+/*position of icon bell*/
+#bell {
+    padding: 5px;
+}
+/*position of icon user*/
+#user {
+    padding: 5px;
+}
+/*position of icon undersolved, overdue, open, on hold*/
+#cards {
+       display: flex;
+       flex-wrap: wrap;
+}       
+#cards, .card {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+}
+/*cards text align*/
+#cards .card-title{
+        font-size: 15px;
+        color: grey;
+    }
+#cards .card-text {
+         font-size: 30px;
+         font-weight: bold;
+}
+#table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+#graph, #graph-boxes {
+    width: 100%;
+}
+#tickets {
+        display: flex;
+        flex-wrap: wrap;
+}
+#tickets .card {
+    width: 100%;
+}
+/*position resolved, recieve, avarage...etc*/
+#graph-boxes {
+    margin: 0 0 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    .card:first-child {
+        margin-top: 0;
+    }
+    .card:last-child {
+        margin-bottom: 0;
+    }
+    .card-title {
+        font-size: 12px;
+        color: grey;
+    }
+    .card-text{
+        font-size: 28px;
+        font-weight: bold;
+    }
+}
+/*position resolved, recieve, avarage...etc text size, text color*/
+
+
+/*text inside table*/
+#graph h5 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px;
+}
+#top-text {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    font-size: 10px; 
+    color: gray;  
+}
+/*buttom boxes*/
+#tickets .card {
+    text-align: left;
+}
+#tickets .card h5 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+#tickets p {
+    font-size: 10px; 
+    color: lightgray;   
+    span {
+        font-size: 10px; 
+        color: grey;   
+    }
+}
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+}
+/*buttom boxes 1*/
+
+#tickets .list-group-item {
+    font-size: 15px; 
+    span {
+        font-size: 10px; 
+        color: grey;
+    }
+}
+
+
+/*desktop version*/
+@media screen and (min-width:480px){
+.navbar {
+        margin:  25px 50px;
+        padding: 50px;
+    }
+/*position of overview*/
+#overview {
+    padding: 20px;
+}
+/*position of icon bell*/
+#bell {
+    padding: 20px;
+}
+/*position of icon user*/
+#user {
+    padding: 20px;
+}
+/*position of icon pipe*/
+#pipe  {
+    padding: 20px 60px 20px;
+}
+    #cards {
+        display: flex;
+        justify-content: space-between;
+     }
+    #cards .card {
+         width: 23%;
+     }
+    #table {
+         display: flex;
+     }
+    #graph {
+     width: 68%;
+     margin-top: 0;
+     margin-bottom: 0;
+    }
+    #graph-boxes {
+        width: 28%;
+    }
+    #tickets {
+         display: flex;
+         justify-content: space-between;
+    }
+    #tickets .card{
+     width: 49%;
+    }
+}
