@@ -22,7 +22,8 @@
   display: flex;
   flex-wrap: wrap; }
 
-#cards, .card {
+#cards,
+.card {
   width: 100%;
   margin: 20px 0;
   text-align: center; }
@@ -41,7 +42,8 @@
   flex-wrap: wrap;
   justify-content: space-between; }
 
-#graph, #graph-boxes {
+#graph,
+#graph-boxes {
   width: 100%; }
 
 #tickets {
