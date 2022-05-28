@@ -6,289 +6,196 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Bootstrap</title>
+  <title>Web page</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/stylesheet.css" />
-
+  <!--icons-->
+  <script src="https://kit.fontawesome.com/2216cb6a92.js" crossorigin="anonymous"></script>
+  <!--jquery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel"
-    data-bs-backdrop="false" data-bs-scroll="true">
-    <!--humburger menu-->
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasLabel">Dashboard Kit</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <!--left side bar-->
-    <div class="offcanvas-body">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Overview</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tickets</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Ideas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Contacts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Agents</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Articles</a>
-        </li>
-        <hr>
-        <li class="nav-item">
-          <a class="nav-link disabled">Settings</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Subscription</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!--top Overview, search bar, user accaunt-->
-  <nav class="navbar navbar-expand navbar-light bg-light">
-    <div class="container-fluid">
-      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
-        aria-controls="offcanvasExample">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <a id="overview" class="navbar-brand" href="#">Overview</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-        <!--icon bell-->
-        <a id="bell" class="navbar-brand" href="#"><i class="fa-solid fa-bell"></i></a>
-        <!--vertical line-->
-        <span id="pipe" class="vertical_line">|</span>
-        <!--user name-->
-        <a class="name" href="#">James Ferdinand</a>
-        <!--user icon-->
-        <a id="user" class="navbar-brand" href="#"><i class="fa-solid fa-user"></i></a>
+
+  <!--navigation-->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid justify-content-between">
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Grid</a>
       </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">How it works</a>
+          </li>
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Who we are</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#">What we do</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <!--sign in  button-->
+      <button id="top-button" class="btn btn-primary" type="submit">Sign in</button>
     </div>
   </nav>
-  <!--Main container-->
-  <div class="container">
-    <!-- nested grid begins 4 sections on top by two-->
-    <div class="row">
-      <!--first box undersolved-->
-      <div id="cards" class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Undersolved</h5>
-            <p class="card-text">60</p>
-          </div>
+  <div id="wrapper">
+    <!--combine cool images masonry grid-->
+    <div>
+      <h1>Combine</h1>
+      <h3> Cool <span>images</span></h3>
+      <h6>To represent a product</h6>
+      <div class="grid">
+        <div class="grid-item"><img src="/assets/images/envelops.png" alt="men_graphs"></div>
+        <div class="grid-item"><img src="/assets/images/clock.png" alt="clock"></div>
+        <div class="grid-item"><img src="/assets/images/image_centre.png" alt="the_core"></div>
+        <div class="grid-item"><img src="/assets/images/men.png" alt="men"></div>
+        <div class="grid-item"><img src="/assets/images/plants.png" alt="plants"></div>
+        <div class="grid-item"><img src="/assets/images/purple_flower.png" alt="purple_flower"></div>
+        <div class="grid-item"><img src="/assets/images/lipstick.png" alt="purple_flower"></div>
+        <div class="grid-item"><button id="learn-more" class="btn btn-primary" type="submit">learn more</button></div>
+      </div>
+    </div>
+    <!--Delivering good designs since 1954-->
+    <h1>Delivering good designs <span>since 1954</span></h1>
+    <h3> We’re the first multi-purpose design kit solutions for businesses. We help you bridge
+      gaps between your layouts, templates and developers to empower all involved</h3>
+    <div id="awesome-cards">
+      <div class="awesome-card">
+        <img src="/assets/images/icon-thumb.png">
+        <div>
+          <h5>Swap the icon</h5>
+          <p>You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter</p>
+          <a href="#" class="learn-more-link">learn more</a>
         </div>
-        <!--second box Overdue-->
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Overdue</h5>
-            <p class="card-text">16</p>
-          </div>
+      </div>
+      <div class="awesome-card">
+        <img src="/assets/images/icon-zip.png">
+        <div>
+          <h5>Detach if need</h5>
+          <p>Detaching the block instance will help you to control the indents and font styles more precisely</p>
+          <a href="#" class="learn-more-link">learn more</a>
         </div>
-        <!--third box Open-->
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Open</h5>
-            <p class="card-text">43</p>
-          </div>
+      </div>
+      <div class="awesome-card">
+        <img src="/assets/images/icon-in.png">
+        <div>
+          <h5>Toggle icons</h5>
+          <p>You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter</p>
+          <a href="#" class="learn-more-link">learn more</a>
         </div>
-        <!--4 box On hold-->
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title"> On hold</h5>
-            <p class="card-text">64</p>
-          </div>
+      </div>
+      <div class="awesome-card">
+        <img src="/assets/images/icon-suitcase.png">
+        <div>
+          <h5>Replace a title</h5>
+          <p>Detaching the block instance will help you to control the indents and font styles more precisely</p>
+          <a href="#" class="learn-more-link">learn more</a>
         </div>
       </div>
     </div>
-    <!--table-->
-    <div class="row">
-      <div id="table" class="col">
-        <div id="graph" class="card">
-          <h5> Today`s trends</h5>
-          <p id="top-text" class="card-text">
-            <span>as of 25 May 2019. 09:41 PM</span>
-            <span>-Today</span>
-            <span>-Yesterday</span>
-          </p>
-          <img src="assets/images/full_graph.jpg" class="card-img-top" alt="chart">
-          <div class="card-body">
-          </div>
+  </div>
+    <!--footer mobile-->
+    <footer id="footer">
+      <div class="container">
+        <div id="footer-copyright">
+          <h6>Copyright © 2018 • Your Company</h6>
+          <h6>All rights reserved <span>Made in Setproduct.com </span><span>One man digital
+              agency</span>hello@fapsterapp.com</span></h6>
         </div>
-        <!--5  boxes -->
-        <div id="graph-boxes">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"> Resolved</h5>
-              <p class="card-text">449</p>
+        <div class="footer-social-links">
+          <a href="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="Youtube" target="_blank"><i class="fa fa-youtube-play"></i></a>
+          <a href="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!--footer desktop-->
+    <footer id="footer-awesome">
+      <div class="container">
+        <div class="row row-cols-2">
+          <div class="col">
+            <div class="footer-social-links">
+              <h5>follow us</h5>
+              <a href="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a href="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+              <a href="Youtube" target="_blank"><i class="fa fa-youtube-play"></i></a>
+              <a href="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"> Recieve</h5>
-              <p class="card-text">426</p>
+          <div class="col">
+            <h5>follow us</h5>
+            <h2>hello@fapsterapp.com</h2>
+          </div>
+          <!--boxes-->
+          <div class="col">
+            <h5>information</h5>
+            <div id="box">
+              <ul>
+                <li>About Fapster app</li>
+                <li>Onhovered / Active</li>
+                <li>We are hiring!</li>
+              </ul>
+              <ul>
+                <li>Get in Touch</li>
+                <li>Privacy Policy</li>
+                <li>Resources</li>
+              </ul>
+              <ul>
+                <li>Things We Like</li>
+                <li>Terms of Service</li>
+              </ul>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"> Average first respond time</h5>
-              <p class="card-text">33 m</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"> Average respond time</h5>
-              <p class="card-text">3h 8m</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"> Resolution within SLA</h5>
-              <p class="card-text">94%</p>
-            </div>
+          <div class="col">
+            <form class="row g-3">
+              <h5>keep in touch</h5>
+              <div class="col-6">
+                <input type="email" class="form-control" placeholder="your name">
+              </div>
+              <div class="col-6">
+                <input type="email" class="form-control" placeholder="email">
+              </div>
+              <div class="col-md-9">
+                <textarea type="text" class="form-control" placeholder="Leave your message"></textarea>
+              </div>
+              <div class="col-3">
+                <button type="submit" class="btn btn-primary btn-lg">Send</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </div>
-    <!--4  sections on the button-->
-    <div class="row">
-      <div class="col" id="tickets">
 
-        <!--Undersolved ticket-->
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Undersolved ticket</h5>
-            <p class="card-text">Group <span>Support</span> </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><span class="descr">Waiting on Feature Request</span> <span>4238</span></li>
-            <li class="list-group-item"><span class="descr">Awaiting Customer Respond </span> <span>1005</span></li>
-            <li class="list-group-item"><span class="descr">Awaiting Developer Fix </span> <span> 914</span></li>
-            <li class="list-group-item"><span class="descr">Pending </span> <span>281</span></li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">View detail</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Tasks</h5>
-            <p class="card-text">Today</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <!--new task-->
-            <li class="list-group-item text-muted text text-opacity-25">Create new task</li>
-            <li class="list-group-item">
-              <div>
-                <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
-                  aria-label="...">
-                Finish ticket update
-              </div>
-              <button type="button" class="btn btn-warning">Urgent</button>
-            </li>
-            <li class="list-group-item">
-              <div>
-                <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
-                  aria-label="...">
-                Create new ticket exmple
-              </div>
-              <button type="button" class="btn btn-success">New</button>
-            </li>
-            <li class="list-group-item">
-              <div>
-                <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
-                  aria-label="...">
-                Update ticket report
-              </div>
-            </li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">View all</a>
-          </div>
-        </div>
-        <!--Resoleved tickets-->
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Tasks</h5>
-            <p class="card-text">Today</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-muted text text-opacity-25">Resolved tickets</li>
-            <li class="list-group-item">Complete
-              <button type="button" class="btn btn-primary">Complete</button>
-            <li class="list-group-item">Duplicate tickets
-              <button type="button" class="btn btn-danger">Duplicate tickets</button>
-            </li>
-            <li class="list-group-item">Update new ticket report</li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">View all</a>
-          </div>
-        </div>
-        <!--info-->
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Tasks</h5>
-            <p class="card-text">Today</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text-muted text text-opacity-25">Get information</li>
-            <li class="list-group-item">Information
-              <button type="button" class="btn btn-info">Info</button>
-            </li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">View all</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-  </div> <!-- container -->
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/fbcc380734.js" crossorigin="anonymous"></script>
-  <script>
-    function checkMediaQuery() {
-      var myOffcanvas = document.getElementById('offcanvas');
-      var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
-      console.log(window.innerWidth);
-      if (window.innerWidth > 480) {
-        console.log('show');
-        bsOffcanvas.show();
-      } else {
-        console.log('hide');
-        bsOffcanvas.hide();
-      }
-    }
-
-    // Add a listener for when the window resizes
-    window.addEventListener('resize', checkMediaQuery);
-
-    checkMediaQuery();
-
-  </script>
+    </footer>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <!--masonry-->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <!--js-->
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
