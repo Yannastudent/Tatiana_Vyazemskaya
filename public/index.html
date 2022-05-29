@@ -20,9 +20,9 @@
 </head>
 
 <body>
-
   <!--navigation-->
   <nav class="navbar navbar-expand-lg bg-light">
+    <!-- Bootstrap's Flex Utility class justify-content-between  -->
     <div class="container-fluid justify-content-between">
       <div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -58,8 +58,9 @@
       <button id="top-button" class="btn btn-primary" type="submit">Sign in</button>
     </div>
   </nav>
+  <!--separate background image-->
   <div id="wrapper">
-    <!--combine cool images masonry grid-->
+    <!--combine cool are images masonry grid-->
     <div>
       <h1>Combine</h1>
       <h3> Cool <span>images</span></h3>
@@ -75,10 +76,13 @@
         <div class="grid-item"><button id="learn-more" class="btn btn-primary" type="submit">learn more</button></div>
       </div>
     </div>
+    <div class="delivering">
     <!--Delivering good designs since 1954-->
-    <h1>Delivering good designs <span>since 1954</span></h1>
+    <h1 class="track">Delivering good designs <span class="since">since 1954</span><img src="/assets/images/delivery_track.png" alt="delivery-tack"></h1>
     <h3> We’re the first multi-purpose design kit solutions for businesses. We help you bridge
       gaps between your layouts, templates and developers to empower all involved</h3>
+    </div>
+      <!--4 boxes with learn more mobile version-->
     <div id="awesome-cards">
       <div class="awesome-card">
         <img src="/assets/images/icon-thumb.png">
@@ -114,88 +118,124 @@
       </div>
     </div>
   </div>
-    <!--footer mobile-->
-    <footer id="footer">
-      <div class="container">
-        <div id="footer-copyright">
-          <h6>Copyright © 2018 • Your Company</h6>
-          <h6>All rights reserved <span>Made in Setproduct.com </span><span>One man digital
-              agency</span>hello@fapsterapp.com</span></h6>
-        </div>
-        <div class="footer-social-links">
-          <a href="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-          <a href="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-          <a href="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-          <a href="Youtube" target="_blank"><i class="fa fa-youtube-play"></i></a>
-          <a href="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
+    <!--4 boxes with learn more desktop version-->
+    <div id="awesome-desktop-cards">
+      <div class="awesome-card">
+        <img src="/assets/images/phone.png">
+        <div>
+          <h5>Support</h5>
+          <p>Delivering faster and more personalized support with shared screens and cool design systems for Figma</p>
+          <a href="#" class="learn-more-link">learn more</a>
         </div>
       </div>
-    </footer>
-    <!--footer desktop-->
-    <footer id="footer-awesome">
-      <div class="container">
-        <div class="row row-cols-2">
-          <div class="col">
-            <div class="footer-social-links">
-              <h5>follow us</h5>
-              <a href="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a href="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-              <a href="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-              <a href="Youtube" target="_blank"><i class="fa fa-youtube-play"></i></a>
-              <a href="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
-            </div>
-          </div>
-          <div class="col">
+      <div class="awesome-card">
+        <img src="/assets/images/clock-icon.png">
+        <div>
+          <h5>Sales growth</h5>
+          <p>Identify qualified customers with easy-to-use live chat messaging and AI-based Sales Bot</p>
+          <a href="#" class="learn-more-link">learn more</a>
+        </div>
+      </div>
+      <div class="awesome-card">
+        <img src="/assets/images/zipp.png">
+        <div>
+          <h5>Coponents-driven</h5>
+          <p>Delivering faster and more personalized support with shared screens and cool design systems for Figma</p>
+          <a href="#" class="learn-more-link">learn more</a>
+        </div>
+      </div>
+      <div class="awesome-card">
+        <img src="/assets/images/green_hand.png">
+        <div>
+          <h5>Swap the icon</h5>
+          <p>You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter</p>
+          <a href="#" class="learn-more-link">learn more</a>
+        </div>
+      </div>
+    </div>
+  <!--footer mobile-->
+  <footer id="footer">
+    <div class="container">
+      <div id="footer-copyright">
+        <h6>Copyright © 2018 • Your Company</h6>
+        <h6>All rights reserved <span>Made in Setproduct.com </span><span>One man digital
+            agency</span>hello@fapsterapp.com</span></h6>
+      </div>
+      <div class="footer-social-links">
+        <a href="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="Youtube" target="_blank"><i class="fa fa-youtube-play"></i></a>
+        <a href="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!--footer desktop-->
+  <footer id="footer-awesome">
+    <div class="container">
+      <div class="row row-cols-2">
+        <div class="col">
+          <div class="footer-social-links">
             <h5>follow us</h5>
-            <h2>hello@fapsterapp.com</h2>
-          </div>
-          <!--boxes-->
-          <div class="col">
-            <h5>information</h5>
-            <div id="box">
-              <ul>
-                <li>About Fapster app</li>
-                <li>Onhovered / Active</li>
-                <li>We are hiring!</li>
-              </ul>
-              <ul>
-                <li>Get in Touch</li>
-                <li>Privacy Policy</li>
-                <li>Resources</li>
-              </ul>
-              <ul>
-                <li>Things We Like</li>
-                <li>Terms of Service</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <form class="row g-3">
-              <h5>keep in touch</h5>
-              <div class="col-6">
-                <input type="email" class="form-control" placeholder="your name">
-              </div>
-              <div class="col-6">
-                <input type="email" class="form-control" placeholder="email">
-              </div>
-              <div class="col-md-9">
-                <textarea type="text" class="form-control" placeholder="Leave your message"></textarea>
-              </div>
-              <div class="col-3">
-                <button type="submit" class="btn btn-primary btn-lg">Send</button>
-              </div>
-            </form>
+            <a href="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="Youtube" target="_blank"><i class="fa fa-youtube-play"></i></a>
+            <a href="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
           </div>
         </div>
+        <div class="col">
+          <h5>follow us</h5>
+          <h2>hello@fapsterapp.com</h2>
+        </div>
+        <!--boxes-->
+        <div class="col">
+          <h5>information</h5>
+          <div id="box">
+            <ul>
+              <li>About Fapster app</li>
+              <li>Onhovered / Active</li>
+              <li>We are hiring!</li>
+            </ul>
+            <ul>
+              <li>Get in Touch</li>
+              <li>Privacy Policy</li>
+              <li>Resources</li>
+            </ul>
+            <ul>
+              <li>Things We Like</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <form class="row g-3">
+            <h5>keep in touch</h5>
+            <div class="col-6">
+              <input type="email" class="form-control" placeholder="your name">
+            </div>
+            <div class="col-6">
+              <input type="email" class="form-control" placeholder="email">
+            </div>
+            <div class="col-md-9">
+              <textarea type="text" class="form-control" placeholder="Leave your message"></textarea>
+            </div>
+            <div class="col-3">
+              <button type="submit" class="btn btn-primary btn-lg">Send</button>
+            </div>
+          </form>
+        </div>
       </div>
-
-    </footer>
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-    <!--masonry-->
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-    <!--js-->
-    <script src="/assets/js/main.js"></script>
+    </div>
+  </footer>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <!--masonry-->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  <!--js-->
+  <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

@@ -12,28 +12,50 @@ $primary: #6C5CE7;
   background-position: right top;
   background-size: 100%;
 }
+/* adjustments for text "Delivering good designs since 1954"*/
+.delivering {
+  margin: 20px;
+}
 
-/*cards */
+/* adjustments for cards "Delivering good designs since 1954"*/
+.awesome-card {
+  width: 130px;
+  margin: 20px 10px;
+}
+/*change color for since*/
+.since {
+  color: $primary;
+   }
+
+
+/*sentence line up with track*/
+.track {
+  display: block;
+   }
+
+/*image track appearance*/
+h1 img {
+  display: none;
+  }
+
+/*boxes with learn more mobile version appearance*/
+#awesome-desktop-cards {
+  display: none;
+}
+/*cards with learn more (4 boxes) */
 #awesome-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   overflow: hidden;
-
 }
-
-;
-/* adjustments for cards "Delivering good designs since 1954"*/
-.awesome-card {
-  width: 130px;
-  margin: 20px 5px;
-}
-/*adjustment for button colors*/
+/*adjustment for button colors learn more */
 .learn-more-link {
   padding: 10px;
   border: 1px solid black;
   border-radius: 5px;
 }
+
 /* footer on mobile*/
 #footer-awesome {
   display: none;
@@ -42,11 +64,13 @@ $primary: #6C5CE7;
 footer {
   display: block;
 }
-/*get rid of list dots*/
+/*get rid of list dots
 ul {
 
   list-style-type: none;
 }
+*/
+
 /*footer grid */
 #box {
   display: flex;
@@ -67,6 +91,28 @@ ul {
     background-position: right top;
     background-size: 300px;
   }
+
+/*image track appearance*/
+h1 img {
+  display: inline-block;
+  }
+/*change color for since*/
+.since {
+  color: black;
+
+   }
+
+/*4 boxes with learn more descktop version*/
+#awesome-desktop-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+/*4 boxes with learn more descktop version appearance*/
+#awesome-cards {
+ display: none;
+}
 /* footer on desktop*/
   #footer-awesome {
     display: block;
@@ -75,4 +121,5 @@ ul {
   footer {
     display: none;
   }
+ 
 }
